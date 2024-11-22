@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getAllSpells } from "./api";
 import { FaSearch } from "react-icons/fa";
 import SpellCard from "./SpellCard";
+import { FaDiceD20 } from "react-icons/fa";
 
 export default function App() {
 
@@ -19,7 +20,8 @@ export default function App() {
 
   return (
     <div className="bg-gray-900 w-screen min-h-screen text-white">
-      <header className=" flex w-full h-48 justify-center items-center">
+      <header className=" flex w-full flex-col h-48 justify-center items-center gap-2">
+        <FaDiceD20 size={50}/>
         <h1 className=" font-bold text-4xl">Spells From D&D 5º</h1>
       </header>
       <form onSubmit={(e) => handleSearch(e)} className=" w-full h-80 flex flex-col justify-center items-center border-b-4 border-t-4">
