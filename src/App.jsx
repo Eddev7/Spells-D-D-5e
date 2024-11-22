@@ -23,7 +23,7 @@ export default function App() {
         <h1 className=" font-bold text-4xl">Spells From D&D 5º</h1>
       </header>
       <form onSubmit={(e) => handleSearch(e)} className=" w-full h-80 flex flex-col justify-center items-center border-b-4 border-t-4">
-        <label className=" font-bold mb-2 text-xl">SEARCH</label>
+        <label className=" font-bold mb-2 text-xl flex gap-2 items-center">SEARCH<FaSearch/></label>
         <div className="flex">
           <input onChange={(e) => setPesquisa(e.target.value)} className=" p-3 rounded-lg w-80 text-black" name="" placeholder="Search spell"></input>
         </div>

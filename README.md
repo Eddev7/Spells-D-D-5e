@@ -1,77 +1,97 @@
-Spells From D&D 5e
+# Spells From D&D 5e
 
 Uma aplicação web interativa para pesquisa e visualização de magias do universo Dungeons & Dragons 5ª edição, desenvolvida com tecnologias modernas como React, Vite e TailwindCSS.
-Funcionalidades
 
-    🔍 Busca Dinâmica: Filtre magias por nome em tempo real.
-    📄 Detalhamento Completo: Visualize informações detalhadas, incluindo nível, escola, componentes, duração e descrição.
-    ⚡ Desempenho Otimizado: Cache de magias usando localStorage para carregamento rápido.
-    📱 Design Responsivo: Interface adaptada para diferentes dispositivos e tamanhos de tela.
+---
 
-Tecnologias Utilizadas
+## **Funcionalidades**
 
-    React: Biblioteca para construção da interface do usuário.
-    Vite: Ferramenta de build rápida e eficiente.
-    TailwindCSS: Framework de CSS para estilização responsiva.
-    Axios: Cliente HTTP para consumo de APIs.
+- 🔍 **Busca Dinâmica**: Filtre magias por nome em tempo real.  
+- 📄 **Detalhamento Completo**: Visualize informações detalhadas, incluindo nível, escola, componentes, duração e descrição.  
+- ⚡ **Desempenho Otimizado**: Cache de magias usando `localStorage` para carregamento rápido.  
+- 📱 **Design Responsivo**: Interface adaptada para diferentes dispositivos e tamanhos de tela.  
 
-Como Executar o Projeto
+---
 
-    Clone o repositório:
+## **Tecnologias Utilizadas**
 
-git clone https://github.com/seu-usuario/spells-dnd5e.git
-cd spells-dnd5e
+- **[React](https://reactjs.org/)**: Biblioteca para construção da interface do usuário.  
+- **[Vite](https://vitejs.dev/)**: Ferramenta de build rápida e eficiente.  
+- **[TailwindCSS](https://tailwindcss.com/)**: Framework de CSS para estilização responsiva.  
+- **[Axios](https://axios-http.com/)**: Cliente HTTP para consumo de APIs.  
 
-Instale as dependências:
+---
 
-npm install
+## **Como Executar o Projeto**
 
-Execute o servidor de desenvolvimento:
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/spells-dnd5e.git
+   cd spells-dnd5e
+   ```
 
-    npm run dev
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
 
-    Acesse a aplicação: Abra http://localhost:5173 no navegador.
+3. **Execute o servidor de desenvolvimento**:
+   ```bash
+   npm run dev
+   ```
 
-Estrutura do Projeto
+4. **Acesse a aplicação**:
+   Abra [http://localhost:5173](http://localhost:5173) no navegador.
 
-    App.jsx:
-    Componente principal, gerencia a busca, renderização de magias e cache local.
-    SpellCard.jsx:
-    Componente de exibição, mostra os detalhes de cada magia.
-    API.js:
-    Arquivo responsável pelas requisições à API oficial de D&D 5e.
+---
 
-API Utilizada
+## **Estrutura do Projeto**
 
-A aplicação consome os dados da API Oficial de D&D 5e.
-Principais endpoints utilizados:
+- **`App.jsx`**:  
+  Componente principal, gerencia a busca, renderização de magias e cache local.  
+- **`SpellCard.jsx`**:  
+  Componente de exibição, mostra os detalhes de cada magia.  
+- **`API.js`**:  
+  Arquivo responsável pelas requisições à API oficial de D&D 5e.  
 
-    /api/spells: Lista de todas as magias.
-    /api/spells/{index}: Detalhes de uma magia específica.
+---
 
-Contribuindo
+## **API Utilizada**
 
-Contribuições são bem-vindas!
-Para contribuir:
+A aplicação consome os dados da [API Oficial de D&D 5e](https://www.dnd5eapi.co).  
+Principais endpoints utilizados:  
+- `/api/spells`: Lista de todas as magias.  
+- `/api/spells/{index}`: Detalhes de uma magia específica.  
 
-    Fork o projeto.
-    Crie uma branch para sua funcionalidade:
+---
 
-git checkout -b minha-nova-funcionalidade
+## **Contribuindo**
 
-Faça um commit das suas alterações:
+Contribuições são bem-vindas!  
+Para contribuir:  
+1. Fork o projeto.  
+2. Crie uma branch para sua funcionalidade:  
+   ```bash
+   git checkout -b minha-nova-funcionalidade
+   ```  
+3. Faça um commit das suas alterações:  
+   ```bash
+   git commit -m "Adicionei nova funcionalidade"
+   ```  
+4. Envie suas alterações:  
+   ```bash
+   git push origin minha-nova-funcionalidade
+   ```  
+5. Abra um pull request.
 
-git commit -m "Adicionei nova funcionalidade"
+---
 
-Envie suas alterações:
+## **Licença**
 
-    git push origin minha-nova-funcionalidade
+Este projeto é licenciado sob a [MIT License](LICENSE).  
 
-    Abra um pull request.
+---
 
-Licença
+### **Autor**
 
-Este projeto é licenciado sob a MIT License.
-Autor
-
-Desenvolvido por Eddev7.
+Desenvolvido por **[Eddev7](https://github.com/Eddev7)**.  

@@ -34,7 +34,7 @@ export default function SpellCard({ spell }) {
         </div>
         <div className="flex flex-col mt-4">
             <button onClick={() => {setDesc(!desc)}} className="bg-cyan-700 rounded-lg p-2">Description</button>
-            <p className={`mt-4 text-center ${desc ? 'opacity-100' : 'opacity-0 hidden'} transition-opacity duration-700 `}>
+            <p className={`max-h-80 overflow-scroll mt-4 text-center ${desc ? 'opacity-100 h-80' : 'opacity-0 h-0'} transition-opacity transition-all duration-700 `}>
                 {spell.desc}
             </p>
         </div>
